@@ -1,0 +1,56 @@
+div{
+    
+width: 200px;
+margin: 25px;    
+}
+h1{
+    background-color:lightskyblue;
+    background-size: 25px;
+    margin: 50px;
+    border-bottom: 10px;
+    border-left: 0px;
+    border-style:solid;
+    text-align: center;
+    border-top: 10px;
+    color:white;
+}
+
+.button:link{
+    position: relative;
+background-color:lightskyblue;
+border-color:lightgray;
+border: 2px;
+border-style: outset;
+color:black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+.button:visited{
+    text-align:center;
+    border-style: outset;
+    border-color:lightgray;
+    color: black;
+    background-color:lightskyblue;
+}    
+.button:hover{
+    background-color:lightskyblue;
+      border-color:lightgray ;
+      color:black;
+      border-style: outset;
+      border: 2px;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 5px;
+      cursor: pointer;
+    }
+
+
+
