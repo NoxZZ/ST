@@ -3,17 +3,7 @@ div{
 width: 200px;
 margin: 25px;    
 }
-h1{
-    background-color:lightskyblue;
-    background-size: 25px;
-    margin: 50px;
-    border-bottom: 10px;
-    border-left: 0px;
-    border-style:solid;
-    text-align: center;
-    border-top: 10px;
-    color:white;
-}
+
 
 .button:link{
     position: relative;

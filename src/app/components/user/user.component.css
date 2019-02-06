@@ -1,0 +1,30 @@
+.form-group{    
+    border:50px;  
+    width:200px;
+    margin:20px; 
+}
+
+.form-control.ng-touched.ng-invalid{
+   border:2px solid red;
+   width: 200px;
+
+}
+
+.form-control.ng-touched.ng-valid{
+    border:2px solid green;
+    width:200px;
+}
+
+.btn{
+    position:absolute;
+    top:55%;
+    left: 42%;
+    margin: 15px;
+    text-align: center;
+    width: auto;
+}
+
+form{
+    width:300px;
+    margin: 0 auto;
+}

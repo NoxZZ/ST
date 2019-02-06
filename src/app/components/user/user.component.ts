@@ -7,16 +7,13 @@ import { USERS } from '../user/mock-users';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-
-  users = USERS;  
-  selectedUser : User;
-  onSelect(user:User):void{
-    this.selectedUser = user;
-  }
   constructor() {
   }
 
   ngOnInit() {
   }
+log(x){
+  console.log(x);
+}
 
 }

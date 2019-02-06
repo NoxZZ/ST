@@ -4,7 +4,7 @@ var http = require('http');
 var path = require('path');
 var bodyParser = require('body-parser');
 
-app.use(express.static(__dirname + '/dist/firstAngularApp'));
+app.use(express.static(__dirname + '/dist/ST'));
 
 app.get('/*',function(req,res){
     res.sendFile(path.join(__dirname));
