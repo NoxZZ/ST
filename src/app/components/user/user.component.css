@@ -16,9 +16,9 @@
 }
 
 .btn{
-    position:absolute;
+    position: relative;
     top:55%;
-    left: 42%;
+    left: 10%;
     margin: 15px;
     text-align: center;
     width: auto;
@@ -27,4 +27,8 @@
 form{
     width:300px;
     margin: 0 auto;
+}
+
+.alert{
+    font-size: 15px;
 }
