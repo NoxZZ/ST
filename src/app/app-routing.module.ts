@@ -7,7 +7,7 @@ import { UpdateUserComponent } from './components/update-user/update-user.compon
 import { DeleteUserComponent } from './components/delete-user/delete-user.component';
 
 const routes:Routes = [
-  {path : '',redirectTo:'/index',pathMatch:'full'},
+  {path : '',redirectTo:'index',pathMatch:'full'},
   {path : 'user' ,component : UserComponent},
   {path : 'index' , component :IndexComponent },
   { path: 'get-user', component : GetUserComponent },
