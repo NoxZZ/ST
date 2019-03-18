@@ -1,5 +1,5 @@
-export class User{
-    EmployeeId:number; 
+export  default class User{ 
     firstName:String;
     lastName:String;
+    EmployeeId:Number;
 }

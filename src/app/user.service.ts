@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
-import { User } from './user';
 import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +8,6 @@ export class UserService {
 
   private url : string = "http://localhost:3000";
 
-  Posts : Observable<any>; 
    httpOptions = {
     headers : new HttpHeaders({
       'Content-type' : 'application/json',
@@ -19,6 +16,9 @@ export class UserService {
   constructor(private http:HttpClient) { }
   
   
+  getUsers(){
+    return this.http.get(this.url + '/get-user');
+  }
 
   addEmployee() {
     const data : any = { 
@@ -31,7 +31,4 @@ export class UserService {
   }
 
 
-  getUsers(){
-    return this.http.get<User[]>(this.url + '/get-user');
-  }
 }

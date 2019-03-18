@@ -22,7 +22,7 @@ function saveData(req){
     var item = {
         firstName : req.body.firstName,
         lastName : req.body.lastName,
-        EmpId : req.body.EmployeeId
+        EmployeeId : req.body.EmployeeId
     }
     console.log(item);
     var userData = new userInfo(item);
@@ -34,9 +34,22 @@ function saveData(req){
     });
 };
 
+//saving the data into the mongodb database
 app.post('/user',(req,res) => {
     console.log('requested on ' + req.body);
     saveData(req);
+});
+
+//retrieving the from mongodb database 
+app.get('/get-user',(req,res) => {
+    console.log('requested on '+ req.body);
+    userInfo.find(function(err,docs){
+        if(err){
+           return  res.send(err);
+        }
+        console.log(docs);
+         res.json(docs);   
+    });
 });
 
 const server = http.createServer(app)
