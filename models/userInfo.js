@@ -13,10 +13,14 @@ var userInfoSchema = new schema({
         type:String,
         required:true
     },
-    EmpId : {
+    EmployeeId : {
         type:Number,
         required:true
-}
+    },
+    nightS : {
+        type:Number,
+        required:true
+    }
 });
 
 var userInfoModel = mongoose.model('userInfoModel',userInfoSchema);

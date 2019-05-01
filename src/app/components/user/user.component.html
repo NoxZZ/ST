@@ -1,10 +1,10 @@
 
-            <form >
+            <form class="form-horizontal" >
                 <div class="form-group">
                 <label for="firstName">
                     First name
                 </label>
-                <input  required ngModel name ="firstName" #firstName="ngModel"   type="text" id="firstName" class="form-control">
+                <input  required ngModel name ="firstName" #firstName="ngModel"   type="text" id="firstName" class="form-control" >
                 <div class="alert alert-danger" *ngIf="!firstName.valid && firstName.touched">
                     First name is required
                 </div>
@@ -22,6 +22,15 @@
                 </div>
             </div>
             
-            <button class="btn btn-primary" (click)="addEmployee()">add Employee</button>
+            <div class="form-group"><label for="nightS">Night shifts Done</label>
+                <input required ngModel name ="nightS" #nightS="ngModel"  type="text" id="nightS" class="form-control">
+                <div class="alert alert-danger" *ngIf="!nightS.valid && nightS.touched">
+                    Nights Done is required
+                </div>
+            </div>
+
+            <button class="btn btn-primary" (click)="addEmployee()"  >add Employee</button>
                 </form> 
+
+
 

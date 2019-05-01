@@ -30,5 +30,6 @@ export class UserService {
     .subscribe(res => console.log('data added successfully'));
   }
 
+  
 
 }
